@@ -63,6 +63,6 @@ resource "aws_iam_policy" "function-1-policy" {
 
 
 resource "aws_iam_role_policy_attachment" "cloudwatch-lambda" {
-  role       = aws_iam_role.iam-for-lambda.name
+  role       = aws_iam_role.lambda_role.name
   policy_arn = aws_iam_policy.function-1-policy.arn
 }

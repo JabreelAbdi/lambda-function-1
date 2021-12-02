@@ -2,7 +2,7 @@ variable "lambda_role_name" {
   description = "Name of the role for my lambda function"
   default = "iam-for-lambda"
 }
-variable "bucketname" {
+variable "pet_bucket_name" {
   description = "This is the name of the s3 bucket"
 }
 
